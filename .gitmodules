@@ -1,0 +1,18 @@
+[submodule "share/scopatz"]
+	path = share/scopatz
+	url = https://github.com/scopatz/nanorc.git
+[submodule "share/highlight-scopatz"]
+	path = share/highlight-scopatz
+	url = https://github.com/scopatz/nanorc.git
+[submodule "share/highlight-mac"]
+	path = share/highlight-mac
+	url = https://github.com/richrad/nanorc-mac
+[submodule "share/highlight-nanosyntax"]
+	path = share/highlight-nanosyntax
+	url = https://github.com/serialhex/nano-highlight
+[submodule "share/highlight-naereen"]
+	path = share/highlight-naereen
+	url = https://github.com/Naereen/nanorc
+[submodule "share/highlight-ipadguy"]
+	path = share/highlight-ipadguy
+	url = https://github.com/iPadGuy/nanorc
