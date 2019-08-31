@@ -1,0 +1,47 @@
+###
+## @author: https://gist.github.com/dyama/b058529a08dce73e54e9
+##
+
+# Windows (notepad) like keybinding for nano editor
+# Modified by dyama, Original code written by zonuexe,
+# license under GPLv3 or NYSL(0.9982)
+# lastupdate: h261124
+#
+# how to install
+# a. rename and move this file to $HOME/.nanorc
+#    % mv nanorc.keybindings $HOME/.nanorc
+# b. concatenate this file with tail of $HOME/.nanorc
+#    % cat nanorc.keybindings >> $HOME/.nanorc
+
+bind ^B browser     main
+bind ^C copytext    main
+bind ^F whereis     main
+bind ^G gotoline    main
+bind ^I indent      main
+bind ^Q exit        main
+bind ^M enter       main
+bind ^S writeout    main
+bind ^R replace     main
+bind ^V uncut       main
+bind ^X cut         main
+bind ^Y redo        main
+bind ^Z undo        main
+
+bind F1 help        main
+bind F3 searchagain main
+
+# External settings
+bind ^T regexp      main
+bind F10 curpos     main
+bind ^A home        main
+bind ^E end         main
+
+set undo
+set softwrap
+set tabsize 2
+set tabstospaces
+set smarthome
+set mouse
+#set const
+set autoindent
+set smooth

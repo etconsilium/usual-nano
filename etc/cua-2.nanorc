@@ -1,0 +1,121 @@
+###
+## author: http://angrymonkey.webfactional.com/wiki/view/CUA_key_bindings_for_nano
+##
+
+# Make tab indentation not rubbish
+set autoindent
+
+# Contantly display the cursor position
+set const
+
+# Makes the top line available for editing
+set morespace
+
+# If the mouse is available, use it to change cursor position.
+set mouse
+
+# Don't add a new line to the end of files.
+set nonewlines
+
+# Smooth scrolling
+set smooth
+
+# No line wrapping, but display the line without scrolling.
+set nowrap
+set softwrap
+
+# apparently experimental undo code.
+set undo
+
+# Allow inserting files into their own buffers
+set multibuffer 
+
+### Key Bindings
+
+## These key bindings attempt to make nano more CUA-like within the limits
+## of available actions and what it will let the user bind. We can't bind 
+## to shift, unfortunately.
+
+## All the typical CUA actions are listed in comments with their key binding;
+## if the function is missing, we unbind that key.
+
+## Files
+# new
+unbind ^N all
+# open, assuming multibuffer is enabled
+bind ^O insert main
+# reload
+unbind ^R all
+unbind F5 all
+# save
+bind ^S writeout all
+unbind F3 all
+# next file, ^tab
+# previous file, shift-^tab
+# close
+unbind ^W all
+# close all/quit
+bind ^Q exit all
+unbind F2 all
+
+# beginning of file/buffer, ^khome
+# end of file/buffer, ^kend
+# page up, ^kpup, default
+unbind F7 all
+# page down, ^kpdown, default
+unbind F8 all
+# beginning of line, home, default
+# end of line, end, default
+# back one word, ^left
+# forward one word, ^right
+# search forward
+bind ^F whereis all
+unbind F6 all
+# repeat last search
+bind F3 searchagain search
+bind ^G searchagain search
+# repeat last search backward
+
+# cut
+bind ^X cut all
+unbind ^K all
+unbind F9 all
+# copy
+bind ^C copytext all
+# paste
+bind ^V uncut all
+unbind ^U all
+unbind F10 all
+# undo
+bind ^Z undo all
+# redo
+bind ^Y redo all
+# select all, ^A
+# help
+bind F1 help all
+unbind ^G main
+
+## For want of a useable CUA key binding, using the Emacs one.
+# Cancel
+bind ^] cancel all
+# change to next file
+bind M-N nextbuf all
+# change to previous file
+bind M-P prevbuf all
+
+## Emacs brain damage compensation
+bind ^A home all
+bind ^E end all
+
+## Extra nano functions not covered in CUA
+
+# goto a sepcific line
+bind ^G gotoline main
+bind M-W wordcount main
+# Can't use ^M, it binds to enter/return!
+bind M-M mark all
+
+# Drop these so more useful things appear in help.
+unbind ^T all
+unbind F12 all
+unbind F11 all
