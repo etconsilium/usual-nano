@@ -1,0 +1,10 @@
+###
+## https://github.com/github/gitignore
+##
+*
+!*.md
+!nanorc
+!/*/
+!/bin/*
+!/*/**.md
+!/*/**.nanorc
