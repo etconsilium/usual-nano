@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "usual-nanorc"
+version = "1.0"
+description = ""
+authors = ["etconsilium <etconsilium@github.com>"]
+license = "WTFPL"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+watchdog-lite = "^0.0.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
